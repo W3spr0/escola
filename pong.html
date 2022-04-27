@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="Pad.js"></script>
+    <script src="Bola.js"></script>
+    <script src="Cpu.js"></script>
+    <script src="Placar.js"></script>
+    <!-- Style Botstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Style -->
+    <style>
+        body{
+            background-color: #ECF3FF;
+        }
+        .padding{
+            padding-left:10%;
+            padding-right:10%;
+        }
+        
+    </style>
+</head>
+<body>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">W3spr0</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+      
+                  <li class="nav-item">
+                    <a class="nav-link active" href="pcomputacional.html">Pensamento Computacional</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Educação financeira</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Matematica</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Física</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    <br>
+      <!-- Todo o que que vai debaixo do nav bar-->
+      <div class="padding"> 
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">...</a>
+            <a href="#">...</a>
+            <a href="#">...</a>
+            <a href="#">...</a>
+          </div>
+          
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()" id="conf"><img width="50" src="http://cdn.onlinewebfonts.com/svg/img_161329.png" alt=""></span>
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+          <div id="main">
+            <button button type="button" class="btn btn-success" onclick="bola.iniciar()">Pong!</button>
+            <br>
+            <canvas id="game" width="720" height="480" style="border: 1px solid #000;">
+                <h1>O seu navegador não posui o Canvas</h1>
+            </canvas>
+            
+          </div>    
+      </div>
+ 
+    <script src="game.js" type="text/javascript"></script>
+</body>
+</html>
+    <!-- Botstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
